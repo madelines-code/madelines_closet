@@ -1,11 +1,9 @@
-function countdown(n){
-  if (n<1) {
-    return [];
-  } else {
-    const countArray = countdown(n-1);
-    countArray.push(n);
-    return countArray;
-  }
-}
+import React from "react";
 
-console.log(countdown(10));
+const Cloth = () => {
+  return (
+    <h1>One Item of Clothing</h1>
+  );
+};
+
+export default Cloth;
