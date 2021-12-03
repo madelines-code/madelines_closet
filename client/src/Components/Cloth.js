@@ -1,8 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Cloth = () => {
+const Cloth = (props) => {
   return (
-    <h1>One Item of Clothing</h1>
+    <div> 
+      <h2>{props.item}</h2>
+      <p>Size: {props.size}</p>
+      <p>Color: {props.color} </p>
+      <p>Description: {props.description}</p>
+    </div>
   );
 };
 

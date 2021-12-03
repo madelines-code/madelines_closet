@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Style from './Style';
+import { Link } from 'react-router-dom';
 
 // import {Route, Routes} from 'react-router-dom'
+
 const Styles = () =>{
   const [styles, setStyles] = useState([]);
   useEffect(()=>{getStyles();
@@ -21,13 +23,16 @@ const Styles = () =>{
     return styles.map((style) => {
       return <Style key={style.id} {...style} 
       // UNCOMMENT WHEN UPDATE AND DELETE ARE BUILT
-      // deletePokemon={deletePokemon} updatePokemon={updatePokemon}
+      // deleteStyle={deleteStyle} updateStyle={updateStyle}
       />
     });
   }
 return (
     <div>
+      <h1>Welome to Madeline's Closet</h1>
+      <p>Click a style category to see what items are available.</p>
       { renderStyles() }
+
     </div>
   );
 };

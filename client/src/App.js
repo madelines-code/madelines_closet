@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Style from './Components/Style';
 import StyleForm from './Components/StyleForm';
 import Styles from "./Components/Styles";
+import StyleShow from './Components/StyleShow';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Styles/>}/>
-        <Route path="/styles/:id" element={<Style/>} />
+        <Route path="/styles/:id" element={<StyleShow/>} />
         <Route path="/styles/:id/cloths" element={<Cloths/>}/>
         <Route path="/styles/:id/cloth/:id" element={<Cloth/>}/>
         <Route path="/styles/new" element={<StyleForm/>}/>
