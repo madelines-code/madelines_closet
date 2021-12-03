@@ -19,7 +19,7 @@ const StyleShow = (props) => {
 
   const getData = async () => {
     try {
-      let styleRes = await axios.get(`/api/styles/${style.id}`);
+      // let styleRes = await axios.get(`/api/styles/${style.id}`);
       let res = await axios.get(`/api/styles/${style.id}/cloths`);
       setCloths(res.data);
     } catch (err) {

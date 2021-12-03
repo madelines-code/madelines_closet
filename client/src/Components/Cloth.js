@@ -8,6 +8,7 @@ const Cloth = (props) => {
       <p>Size: {props.size}</p>
       <p>Color: {props.color} </p>
       <p>Description: {props.description}</p>
+      <Link to={`/styles/${props.id}/cloths/${props.id}`}>Edit</Link>
     </div>
   );
 };
